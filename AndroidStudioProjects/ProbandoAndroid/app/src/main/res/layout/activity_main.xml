@@ -9,39 +9,56 @@
 
 
     <LinearLayout
+        android:id="@+id/LinearLayout1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:orientation="vertical"
-        android:gravity="center">
-
+        app:layout_constraintTop_toTopOf="parent">
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/_iconousuario"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-           />
+            android:src="@drawable/_iconousuario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_alignParentTop="true">
+        </ImageView>
+        <EditText
+            android:id="@+id/Login_Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:inputType="textMultiLine" />
+        <EditText
+            android:id="@+id/Login_Contrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/next_button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </TextView>
+        
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/check"
+            android:layout_gravity="right">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-    <TextView
-        android:id="@+id/HolaMundoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

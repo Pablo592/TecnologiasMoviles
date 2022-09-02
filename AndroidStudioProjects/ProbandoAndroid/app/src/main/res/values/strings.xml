@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProbandoAndroid</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="elSnackbar">Soy el snackbar</string>
+    <string name="MyTitle">Mi titulo</string>
 </resources>
