@@ -5,5 +5,12 @@
     <string name="elSnackbar">Soy el snackbar</string>
     <string name="MyTitle">Mi titulo</string>
     <string name="unTexto">Ejemplo</string>
+    <string name="login">Login</string>
+    <string name="iemail">Email:</string>
+    <string name="user">Usuario:</string>
+    <string name="contrasenia">Contraseña:</string>
+    <string name="olvido_su_contrase_a">Olvidò su contraseña ?</string>
+    <string name="iniciar_sesion">Iniciar sesion</string>
+    <string name="registrarse">Registrarme</string>
 
 </resources>
