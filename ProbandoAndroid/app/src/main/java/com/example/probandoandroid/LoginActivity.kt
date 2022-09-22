@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class LoginActivity : AppCompatActivity() { //Con AppCompatActivity() indico que es un activity class LoginActivity : AppCompatActivity() { //Con AppCompatActivity() indico que es un activity
+class LoginActivity : AppCompatActivity() {
 
     private lateinit var botonContraseniaOlvidada: Button
     private lateinit var botonIngresar: Button
