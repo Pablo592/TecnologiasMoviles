@@ -47,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
                 correo = inputEmail.text.toString()
             }
 
-            Toast.makeText(baseContext, "Envaimos un correo a $correo", Toast.LENGTH_LONG).show();
+            Toast.makeText(baseContext, "Enviamos un correo a $correo", Toast.LENGTH_LONG).show();
         }
 
         botonIngresar.setOnClickListener() {
