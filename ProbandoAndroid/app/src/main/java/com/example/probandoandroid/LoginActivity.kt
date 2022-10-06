@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         botonContraseniaOlvidada.setOnClickListener() {
 
             var correo = ""
-            if (inputEmail.text.toString() == "") {
+            if (inputEmail.text.isEmpty()) {
                 correo = "pgaido524@alumnos.iua.edu.ar"
             } else {
                 correo = inputEmail.text.toString()
@@ -53,11 +53,11 @@ class LoginActivity : AppCompatActivity() {
         botonIngresar.setOnClickListener() {
 
             val contraseniaCorrecta = "123"
-                if(inputEmail.text.toString() == "")
+                if(inputEmail.text.isEmpty())
                     Toast.makeText(baseContext, "Por favor ingrese su Email", Toast.LENGTH_LONG).show();
-                else if(inputUser.text.toString() == "")
+                else if(inputUser.text.isEmpty())
                     Toast.makeText(baseContext, "Por favor ingrese su Usuario", Toast.LENGTH_LONG).show();
-                else if(inputPassword.text.toString() == "")
+                else if(inputPassword.text.isEmpty())
                     Toast.makeText(baseContext, "Por favor ingrese su Contraseña", Toast.LENGTH_LONG).show();
                 else if(inputPassword.text.toString() != contraseniaCorrecta)
                     Toast.makeText(baseContext, "Contraseña incorrecta", Toast.LENGTH_LONG).show();
